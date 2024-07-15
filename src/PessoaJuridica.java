@@ -1,8 +1,16 @@
 public class PessoaJuridica extends Pessoa{
-    String cnpj;
 
-    @Override
-    public int retornaInteiro() {
-        return 0;
+    private String cnpj;
+
+    public double  desconto(){
+        return super.getSalario();
+    }
+
+    public String getCnpj(){
+        return cnpj;
+    }
+
+    public void setCnpj(String cnpj){
+        this.cnpj=cnpj;
     }
 }
